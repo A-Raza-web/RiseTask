@@ -7,7 +7,7 @@ function Footer() {
   const [footer, setFooter] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/footer")
+    axios.get("https://rise-task-server.vercel.app/api/footer")
       .then(res => setFooter(res.data))
       .catch(err => console.error(err));
   }, []);

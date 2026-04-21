@@ -9,7 +9,7 @@ const Home = () => {
   const [homeData, setHomeData] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/home")
+    axios.get("https://rise-task-server.vercel.app/api/home")
       .then((res) => setHomeData(res.data))
       .catch((err) => console.error(err));
   }, []);

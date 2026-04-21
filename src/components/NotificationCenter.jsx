@@ -19,7 +19,7 @@ const NotificationCenter = () => {
   const [unreadCount, setUnreadCount] = useState(0);
   // const [isLoading, setIsLoading] = useState(false);
 
-  const API_URL = 'http://localhost:5000/api/notifications';
+  const API_URL = 'https://rise-task-server.vercel.app/api/notifications';
 
   useEffect(() => {
     fetchNotifications();

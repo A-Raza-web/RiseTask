@@ -114,7 +114,7 @@ const Auth = () => {
     try {
       if (isSignUp) {
         // Sign Up
-        const res = await axios.post("http://localhost:5000/api/auth/signup", formData);
+        const res = await axios.post("https://rise-task-server.vercel.app/api/auth/signup", formData);
         setMessage(res.data.message);
         setIsError(false);
         
@@ -124,7 +124,7 @@ const Auth = () => {
         }, 2000);
       } else {
         // Sign In
-        const res = await axios.post("http://localhost:5000/api/auth/login", {
+        const res = await axios.post("https://rise-task-server.vercel.app/api/auth/login", {
           email: formData.email,
           password: formData.password,
         });
@@ -157,7 +157,6 @@ const Auth = () => {
   const handleGoogleSignIn = () => {
     console.log("Google Sign In clicked");
     // TODO: Implement Google OAuth
-    // window.location.href = "http://localhost:5000/api/auth/google";
   };
 
   return (

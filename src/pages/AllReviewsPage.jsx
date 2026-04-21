@@ -20,7 +20,7 @@ const sidebarSections = [
   { id: "improvement", label: "Needs Improvement", icon: FaTools },
 ];
 
-const REVIEW_API_URL = "http://localhost:5000/api/reviews";
+const REVIEW_API_URL = "hhttps://rise-task-server.vercel.app/api/reviews";
 
 const formatReviewDate = (dateValue) =>
   new Date(dateValue).toLocaleDateString("en-US", {

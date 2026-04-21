@@ -8,7 +8,7 @@ import "./Settings.css";
 import { useSnackbar } from "../contexts/SnackbarContext";
 import { useConfirmDialog } from "../hooks/useConfirmDialog"; 
 
-const API_URL = "http://localhost:5000/api/settings"; // Backend ka route
+const API_URL = "https://rise-task-server.vercel.app/api/settings"; // Backend ka route
 const DEFAULT_SETTINGS = {
   notifications: true,
   darkMode: false,

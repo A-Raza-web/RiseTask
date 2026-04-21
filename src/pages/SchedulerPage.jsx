@@ -4,13 +4,11 @@ import { FaPencilAlt, FaCalendarAlt, FaStar, FaSave } from 'react-icons/fa';
 import './SchedulerPage.css';
 
 const SchedulerPage = () => {
-  // useState hook کا استعمال کر کے priority state کو manage کیا گیا ہے
   const [priority, setPriority] = useState('medium'); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Task Scheduled!");
-    // یہاں پر آپ فارم کا ڈیٹا، بشمول priority کی ویلیو، بھیج سکتے ہیں
     console.log("Priority selected:", priority);
   };
 

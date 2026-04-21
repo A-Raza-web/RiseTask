@@ -10,7 +10,7 @@ export default function Features() {
 
 useEffect(() => {
   axios
-    .get("http://localhost:5000/api/features")
+    .get("https://rise-task-server.vercel.app/api/features")
     .then((res) => {
       if (res.data.features && res.data.features.length > 0) {
         setFeatures(res.data.features[0].features);

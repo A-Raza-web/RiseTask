@@ -30,7 +30,7 @@ const TaskList = () => {
   // Show count (how many tasks to display)
   const [showCount, setShowCount] = useState("All"); // Number or 'All'
   const showOptions = [5, 10, 20, "All"];
-  const API_URL = "http://localhost:5000/api/tasklist";
+  const API_URL = "https://rise-task-server.vercel.app/api/tasklist";
   const getCurrentUserId = () => localStorage.getItem("userId");
 
   // Grid Layout Helper

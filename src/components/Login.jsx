@@ -6,7 +6,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
-const API_URL = "http://localhost:5000/api/auth/login";
+const API_URL = "https://rise-task-server.vercel.app/api/auth/login";
 
 const Login = () => {
   const [email, setEmail] = useState("");

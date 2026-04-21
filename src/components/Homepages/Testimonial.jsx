@@ -18,7 +18,7 @@ export default function Testimonials() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/testimonials")
+      .get("https://rise-task-server.vercel.app/api/testimonials")
       .then((res) => setTestimonials(Array.isArray(res.data) ? res.data : []))
       .catch((err) => console.error("Error fetching testimonials:", err))
       .finally(() => setIsLoading(false));

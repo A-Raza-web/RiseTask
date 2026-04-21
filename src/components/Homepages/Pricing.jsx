@@ -6,7 +6,7 @@ export default function Pricing() {
   const [plans, setPlans] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/pricing")
+    axios.get("https://rise-task-server.vercel.app/api/pricing")
       .then(res => setPlans(res.data))
       .catch(err => console.error(err));
   }, []);

@@ -9,7 +9,7 @@ import TaskCategoryTags from "./TaskCategoryTags.jsx";
 import TaskNotifications from "./TaskNotifications.jsx";
 import TaskFormActions from "./TaskFormActions.jsx";
 
-const API_URL = "http://localhost:5000/api/tasks";
+const API_URL = "https://rise-task-server.vercel.app/api/tasks";
 const orange = "#fd7e14";
 
 const TaskForm = ({ onTaskAdded }) => {

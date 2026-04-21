@@ -13,7 +13,7 @@ import axios from "axios";
 import { useSnackbar } from "../contexts/SnackbarContext";
 import "./ReviewPage.css";
 
-const REVIEW_API_URL = "http://localhost:5000/api/reviews";
+const REVIEW_API_URL = "https://rise-task-server.vercel.app/api/reviews";
 const categoryOptions = ["General", "Planning", "Task Board", "Notifications", "Performance"];
 
 const SubmitReviewPage = () => {

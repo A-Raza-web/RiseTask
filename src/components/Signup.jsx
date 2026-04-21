@@ -101,7 +101,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/signup", formData);
+      const res = await axios.post("https://rise-task-server.vercel.app/api/auth/signup", formData);
       setMessage(res.data.message);
       setIsError(false);
     } catch (err) {

@@ -42,7 +42,7 @@ const getUserEmail = () => {
   }
 };
 
-const PROFILE_API_URL = "http://localhost:5000/api/profile";
+const PROFILE_API_URL = "https://rise-task-server.vercel.app/api/profile";
 
 const ProfilePage = () => {
   const { showSnackbar } = useSnackbar();

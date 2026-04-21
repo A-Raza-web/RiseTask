@@ -24,7 +24,7 @@ const CategoriesList = ({ categories }) => {
         setLoading(true);
 
         try {
-            const response = await axios.get(`http://localhost:5000/api/tasks?category=${category.name}`);
+            const response = await axios.get(`https://rise-task-server.vercel.app/api/tasks?category=${category.name}`);
             setCategoryTasks(response.data.tasks || []);
         } catch (error) {
             console.error('Failed to fetch category tasks:', error);

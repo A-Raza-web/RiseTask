@@ -6,7 +6,7 @@ export default function About() {
   const [about, setAbout] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/about")
+    fetch("https://rise-task-server.vercel.app/api/about")
       .then((res) => res.json())
       .then((data) => setAbout(data))
       .catch((err) => console.error(err));
