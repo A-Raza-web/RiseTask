@@ -1,0 +1,182 @@
+/* Show Menu Component - Clean & Minimal Dashboard Style */
+
+.show-menu-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.show-menu-button {
+  background: #ffffff !important;
+  color: #1f2937 !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  min-width: 120px !important;
+  justify-content: space-between !important;
+}
+
+.show-menu-button:hover {
+  border-color: #d1d5db !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-1px);
+}
+
+.show-menu-button:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Arrow icon animation */
+.menu-arrow {
+  transition: transform 0.2s ease;
+  color: #6b7280;
+}
+
+.menu-arrow.rotated {
+  transform: rotate(180deg);
+}
+
+/* Menu dropdown styling */
+.show-menu-paper {
+  border-radius: 8px !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid #f1f3f5 !important;
+  margin-top: 0.5rem !important;
+  min-width: 120px !important;
+}
+
+/* Menu items */
+.show-menu-item {
+  font-size: 0.875rem !important;
+  padding: 0.75rem 1rem !important;
+  transition: all 0.15s ease !important;
+  border-radius: 4px !important;
+  margin: 0.25rem !important;
+}
+
+.show-menu-item:hover {
+  background-color: #f9fafb !important;
+  color: #1f2937 !important;
+}
+
+.show-menu-item.active {
+  background-color: #eff6ff !important;
+  color: #1d4ed8 !important;
+  font-weight: 500 !important;
+}
+
+.show-menu-item.active:hover {
+  background-color: #dbeafe !important;
+}
+
+/* Focus states for accessibility */
+.show-menu-item:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: -2px;
+  background-color: #f0f9ff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .show-menu-button {
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.8125rem !important;
+    min-width: 100px !important;
+  }
+  
+  .show-menu-paper {
+    min-width: 100px !important;
+  }
+  
+  .show-menu-item {
+    padding: 0.625rem 0.875rem !important;
+    font-size: 0.8125rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .show-menu-button {
+    padding: 0.375rem 0.75rem !important;
+    font-size: 0.75rem !important;
+    min-width: 90px !important;
+  }
+  
+  .show-menu-item {
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.75rem !important;
+  }
+}
+
+/* Loading skeleton state */
+.show-menu-button.skeleton {
+  background: linear-gradient(90deg, #f8f9fa 25%, #e9ecef 50%, #f8f9fa 75%) !important;
+  background-size: 200% 100% !important;
+  animation: skeleton-loading 1.5s ease-in-out infinite !important;
+  pointer-events: none !important;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Dark mode support (matches app theme toggle) */
+[data-theme="dark"] .show-menu-button {
+  background: #1f2937 !important;
+  color: #f9fafb !important;
+  border-color: #374151 !important;
+}
+
+[data-theme="dark"] .show-menu-button:hover {
+  border-color: #4b5563 !important;
+  background: #374151 !important;
+}
+
+[data-theme="dark"] .show-menu-paper {
+  background: #1f2937 !important;
+  border-color: #374151 !important;
+  color: #f9fafb !important;
+}
+
+[data-theme="dark"] .show-menu-item {
+  color: #f9fafb !important;
+}
+
+[data-theme="dark"] .show-menu-item:hover {
+  background-color: #374151 !important;
+  color: #f9fafb !important;
+}
+
+[data-theme="dark"] .show-menu-item.active {
+  background-color: #1e3a8a !important;
+  color: #93c5fd !important;
+}
+
+[data-theme="dark"] .menu-arrow {
+  color: #9ca3af;
+}
+
+/* Print styles */
+@media print {
+  .show-menu-button {
+    box-shadow: none !important;
+    border: 1px solid #d1d5db !important;
+  }
+  
+  .show-menu-paper {
+    box-shadow: none !important;
+    border: 1px solid #d1d5db !important;
+  }
+}

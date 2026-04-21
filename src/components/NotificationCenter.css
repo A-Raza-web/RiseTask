@@ -1,0 +1,185 @@
+.notification-center {
+  position: relative;
+  z-index: 1000;
+  margin-left: 100px !important;
+}
+.notification-center .btn1{
+align-items: center; 
+justify-content: center; 
+min-width: 40px; 
+height: 50px;
+width: 50px;
+color:#6c757d;
+}
+
+.notification-center .btn1 {
+  /* Alignment and Size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  /* Initial State */
+  background: transparent;
+  border: 1px solid transparent; 
+  border-radius: 8px; 
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; 
+}
+
+.notification-center .btn1:hover {
+  background-color: #ededed;
+  border: 1px solid #6c757d;
+  border-radius: 50%; /* Hover par circle ban jayega */
+  
+  /* Thoda sa glow aur movement */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05); /* Halki si magnification */
+}
+.notification-center .btn1 svg{
+  font-size: 18px !important;
+}
+.notification-center .btn1:active {
+  transform: scale(0.95); /* Click karne par thoda sa chota hoga */
+}
+.notification-center .btn1 .count{position: absolute; top: -4px; right: -0px; background: #ea2b0f; height: 15px; width: 15px;
+border-radius: 50%; display: flex; color: #fff; font-size: 12px;}
+.css-1uent87-MuiButtonBase-root-MuiButton-root{
+   min-width: 35px !important;
+}
+
+
+.notification-dropdown {
+  z-index: 1050;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.notification-item {
+  transition: all 0.2s ease;
+}
+
+.notification-item:hover {
+  background-color: #f8f9fa !important;
+}
+
+.notification-item:last-child {
+  border-bottom: none !important;
+}
+
+.badge-urgent {
+  background-color: #dc3545;
+  color: white;
+}
+
+.badge-high {
+  background-color: #fd7e14;
+  color: white;
+}
+
+.badge-medium {
+  background-color: #ffc107;
+  color: black;
+}
+
+.badge-low {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Custom scrollbar for notification list */
+.card-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.card-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.card-body::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.card-body::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Notification bell animation */
+@keyframes bellShake {
+  0%, 50%, 100% { transform: rotate(0deg); }
+  10%, 30% { transform: rotate(-10deg); }
+  20%, 40% { transform: rotate(10deg); }
+}
+
+
+
+/* Priority border colors */
+.border-danger {
+  border-left-color: #dc3545 !important;
+}
+
+.border-warning {
+  border-left-color: #ffc107 !important;
+}
+
+.border-info {
+  border-left-color: #17a2b8 !important;
+}
+
+.border-secondary {
+  border-left-color: #6c757d !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .notification-dropdown .card {
+    width: 300px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .notification-dropdown .card {
+    width: 280px !important;
+  }
+  
+  .notification-dropdown {
+    right: -50px;
+  }
+}
+
+[data-theme="dark"] .notification-center .btn1 {
+  color: #dbe5f2;
+}
+
+[data-theme="dark"] .notification-center .btn1:hover {
+  background-color: rgba(253, 126, 20, 0.15);
+  border-color: rgba(253, 126, 20, 0.35);
+}
+
+[data-theme="dark"] .notification-item:hover {
+  background-color: rgba(253, 126, 20, 0.12) !important;
+}
+
+[data-theme="dark"] .notification-item.bg-light {
+  background-color: rgba(253, 126, 20, 0.18) !important;
+}
+
+[data-theme="dark"] .notification-dropdown .card-body::-webkit-scrollbar-track {
+  background: #2a3a50;
+}
+
+[data-theme="dark"] .notification-dropdown .card-body::-webkit-scrollbar-thumb {
+  background: #4b5d77;
+}

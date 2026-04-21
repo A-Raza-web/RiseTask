@@ -1,0 +1,152 @@
+
+
+.btn-orange {
+  border: 2px solid #fd7e14;
+  color: #fd7e14;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-orange:hover {
+  background-color: #fd7e14;
+  color: white;
+}
+/* Dashboard specific styles */
+.dashboard-container h2 { font-weight: 700; }
+.dashboard-header { gap: 12px; }
+
+.dashboard-container .btn-add-task {
+  background: linear-gradient(135deg, #fd7e14 0%, #f76707 100%);
+  color: #fff;
+  border: 0;
+  border-radius: 12px;
+  padding: 0.62rem 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 10px 24px rgba(253, 126, 20, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.dashboard-container .btn-add-task .btn-add-task-icon {
+  font-size: 0.92rem;
+}
+
+.dashboard-container .btn-add-task:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(253, 126, 20, 0.32);
+  filter: saturate(1.05);
+}
+
+.dashboard-container .btn-add-task:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(253, 126, 20, 0.2);
+}
+
+.dashboard-container .btn-add-task:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 4px rgba(253, 126, 20, 0.28), 0 10px 24px rgba(253, 126, 20, 0.28);
+}
+
+/* General dashboard card look (match reference design) */
+.dashboard-card, .stat-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #f1f3f5;
+  color: #1f2937;
+}
+
+/* Stat card specifics */
+.stat-card { padding: 0; }
+.stat-card-body { padding: 18px; }
+.stat-title { font-size: 0.85rem; color: #6b7280; margin: 0 0 6px 0; }
+.stat-value { font-size: 1.7rem; margin: 0; font-weight: 700; }
+
+.stat-icon-tile { width: 52px; height: 52px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; }
+.stat-icon-tile .icon-svg { font-size: 20px; }
+.stat-icon-tile.primary-gradient { background: linear-gradient(135deg,#e6f4ff,#d0ebff); color: #0b5fff; }
+.stat-icon-tile.success { background: linear-gradient(135deg,#e9f9f0,#d1f3df); color: #059669; }
+.stat-icon-tile.warning { background: linear-gradient(135deg,#fff7ed,#fff1e6); color: #d97706; }
+.stat-icon-tile.danger { background: linear-gradient(135deg,#fff1f2,#ffe6e8); color: #dc2626; }
+
+/* Card header & body polish */
+.card-header { background: transparent; border-bottom: 1px solid #f1f3f5; padding: 12px 18px; }
+.card-header h5 { margin: 0; font-size: 1rem; font-weight: 700; }
+.card-body { padding: 18px; }
+
+/* subtle shadow */
+.shadow-sm { box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06) !important; }
+
+/* categories grid */
+.categories-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; }
+.category-box { background: #fbfdff; border-radius: 8px; padding: 12px; border: 1px solid #eef2f6; }
+.category-header { display:flex; align-items:center; gap:8px; }
+.category-icon { font-size: 20px; }
+.category-name { margin: 0; font-size: 0.95rem; }
+.category-footer { margin-top: 8px; display:flex; align-items:center; gap:8px; }
+.category-count { font-weight:700; font-size:1.05rem; }
+
+[data-theme="dark"] .dashboard-container h2 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .dashboard-container .btn-add-task {
+  background: linear-gradient(135deg, #ff922b 0%, #fd7e14 100%);
+  color: #111827;
+  box-shadow: 0 12px 26px rgba(255, 146, 43, 0.32);
+}
+
+[data-theme="dark"] .dashboard-container .btn-add-task:hover {
+  color: #111827;
+  box-shadow: 0 16px 30px rgba(255, 146, 43, 0.36);
+}
+
+[data-theme="dark"] .dashboard-card,
+[data-theme="dark"] .dashboard-container .stat-card {
+  background: #1f2937;
+  color: #f8fafc;
+  border-color: #36465c;
+}
+
+[data-theme="dark"] .dashboard-container .stat-title {
+  color: #aeb9c8;
+}
+
+[data-theme="dark"] .dashboard-container .stat-value {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .dashboard-container .card-header {
+  background: #253244;
+  border-color: #36465c;
+}
+
+[data-theme="dark"] .dashboard-container .card-header h5 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .dashboard-container .card-body {
+  background: transparent;
+}
+
+[data-theme="dark"] .dashboard-container .btn-orange {
+  background-color: transparent;
+  color: #ffb067;
+  border-color: #fd7e14;
+}
+
+[data-theme="dark"] .dashboard-container .btn-orange:hover {
+  background-color: #fd7e14;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container .btn-add-task {
+    padding: 0.56rem 0.88rem;
+    border-radius: 10px;
+    font-size: 0.92rem;
+  }
+}

@@ -1,0 +1,326 @@
+/* Modern Navbar Styles */
+.site-navbar {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 0.75rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .site-navbar {
+  background: rgba(26, 26, 26, 0.98);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Brand & Logo */
+.navbar-brand-custom {
+  margin-top: -10px !important;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand-custom:hover {
+  transform: scale(1.05);
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  transition: filter 0.3s ease;
+}
+
+.navbar-brand-custom:hover .navbar-logo {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+}
+
+[data-theme="dark"] .navbar-logo {
+  filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.1));
+}
+
+[data-theme="dark"] .navbar-brand-custom:hover .navbar-logo {
+  filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.2));
+}
+
+/* Nav Links */
+.site-navbar .navbar-nav .nav-link {
+  color: #2d3748;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+[data-theme="dark"] .site-navbar .navbar-nav .nav-link {
+  color: #e2e8f0;
+}
+
+.site-navbar .navbar-nav .nav-link:hover {
+  color: #fd7e14 !important;
+  background: rgba(253, 126, 20, 0.08);
+  transform: translateY(-1px);
+}
+
+.site-navbar .navbar-nav .nav-link svg {
+  color: #fd7e14;
+  font-size: 1rem;
+}
+
+/* Dropdown */
+.site-navbar .dropdown-toggle {
+  color: #2d3748;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .site-navbar .dropdown-toggle {
+  color: #e2e8f0;
+}
+
+.site-navbar .dropdown-toggle:hover {
+  color: #fd7e14 !important;
+  background: rgba(253, 126, 20, 0.08);
+}
+
+.site-navbar .dropdown-menu {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+[data-theme="dark"] .site-navbar .dropdown-menu {
+  background: rgba(45, 45, 45, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.site-navbar .dropdown-menu .dropdown-item {
+  color: #2d3748;
+  padding: 0.625rem 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+[data-theme="dark"] .site-navbar .dropdown-menu .dropdown-item {
+  color: #e2e8f0;
+}
+
+.site-navbar .dropdown-menu .dropdown-item:hover {
+  color: #fd7e14;
+  background: rgba(253, 126, 20, 0.08);
+}
+
+.site-navbar .dropdown-menu .dropdown-item svg {
+  color: #fd7e14;
+  margin-right: 0.5rem;
+}
+
+/* Sign Up Button */
+.signin-nav-btn {
+  border: 1px solid #fd7e14;
+  color: #fd7e14 !important;
+  padding: 0.625rem 1.1rem !important;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.signin-nav-btn:hover {
+  background: rgba(253, 126, 20, 0.1) !important;
+  transform: translateY(-1px);
+}
+
+.signin-nav-btn svg {
+  color: #fd7e14 !important;
+}
+
+.signup-nav-btn {
+  background: linear-gradient(135deg, #fd7e14 0%, #e87211 100%);
+  color: white !important;
+  padding: 0.625rem 1.5rem !important;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(253, 126, 20, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.signup-nav-btn:hover {
+  background: linear-gradient(135deg, #e87211 0%, #d66910 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(253, 126, 20, 0.35);
+}
+
+.signup-nav-btn svg {
+  color: white !important;
+}
+
+.auth-nav-actions {
+  gap: 0.5rem;
+}
+
+/* Profile circle icon button */
+.profile-circle-btn {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(253, 126, 20, 0.35);
+  background: rgba(253, 126, 20, 0.08);
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.profile-circle-btn:hover {
+  background: #fd7e14 !important;
+  border-color: #fd7e14;
+  transform: translateY(-1px);
+}
+
+.profile-circle-btn svg {
+  font-size: 1.35rem !important;
+  color: #fd7e14 !important;
+  margin: 0 !important;
+}
+
+.profile-circle-btn:hover svg {
+  color: #fff !important;
+}
+
+[data-theme="dark"] .profile-circle-btn {
+  border-color: rgba(253, 126, 20, 0.45);
+  background: rgba(253, 126, 20, 0.2);
+}
+
+.profile-dropdown .dropdown-toggle {
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  display: inline-flex !important;
+  align-items: center;
+}
+
+.profile-dropdown .dropdown-toggle::after {
+  display: none !important;
+}
+
+.profile-dropdown .dropdown-menu {
+  min-width: 260px;
+  padding: 0.4rem;
+}
+
+.profile-dropdown-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 10px;
+  background: rgba(253, 126, 20, 0.08);
+  margin: 0.25rem;
+}
+
+.profile-header-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fd7e14;
+}
+
+.profile-header-meta {
+  min-width: 0;
+}
+
+.profile-header-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #2d3748;
+  text-transform: capitalize;
+}
+
+.profile-header-email {
+  font-size: 0.8rem;
+  color: #6b7280;
+  word-break: break-word;
+}
+
+.profile-logout-item {
+  color: #dc3545 !important;
+  font-weight: 600;
+}
+
+[data-theme="dark"] .profile-dropdown-header {
+  background: rgba(253, 126, 20, 0.18);
+}
+
+[data-theme="dark"] .profile-header-name {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .profile-header-email {
+  color: #c8d3e1;
+}
+
+/* Navbar Toggler */
+.site-navbar .navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.site-navbar .navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(253, 126, 20, 0.15);
+}
+
+.site-navbar .navbar-toggler-icon {
+  width: 24px;
+  height: 24px;
+}
+
+[data-theme="dark"] .site-navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .site-navbar .navbar-nav {
+    padding: 1rem 0;
+  }
+
+  .auth-nav-actions {
+    padding: 0.4rem 0;
+  }
+  
+  .site-navbar .navbar-nav .nav-link {
+    margin: 0.25rem 0;
+  }
+  
+  .profile-circle-btn {
+    margin-top: 0.5rem;
+  }
+}

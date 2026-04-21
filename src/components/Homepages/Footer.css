@@ -1,0 +1,50 @@
+:root{
+  --footer-bg-1: #ffffff; /* light */
+  --footer-bg-2: #f8f9fa; /* off-white */
+  --footer-accent: #fd7e14; /* existing orange */
+  --footer-text: #222222; /* dark text for light footer */
+}
+
+[data-theme="dark"] {
+  --footer-bg-1: #111827;
+  --footer-bg-2: #172233;
+  --footer-text: #dbe5f2;
+}
+
+.site-footer {
+  background: linear-gradient(180deg, var(--footer-bg-1) 0%, var(--footer-bg-2) 100%);
+  color: var(--footer-text) !important;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.02);
+}
+
+.site-footer a {
+  color: var(--footer-text) !important;
+  opacity: 0.95;
+  transition: color 0.2s ease, transform 0.15s ease;
+}
+
+.site-footer a:hover {
+  color: var(--footer-accent) !important;
+  transform: translateY(-2px);
+}
+
+.site-footer .footer-icon {
+  font-size: 1.25rem;
+  color: var(--footer-text);
+  transition: color 0.2s ease, transform 0.15s ease;
+}
+
+.site-footer .footer-icon:hover {
+  color: var(--footer-accent);
+  transform: scale(1.05);
+}
+
+.site-footer h5 {
+  color: var(--footer-accent) !important;
+}
+
+/* Slightly increase padding for larger footer */
+@media (min-width: 768px) {
+  .site-footer { padding-top: 2rem; padding-bottom: 1.5rem; }
+}
