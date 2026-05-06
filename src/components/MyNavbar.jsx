@@ -121,7 +121,9 @@ const MyNavbar = () => {
               </Nav>
               <Nav className="d-flex align-items-center">
                 <div className="me-3"></div>
-                <NotificationCenter />
+                <div className="d-none d-lg-block">
+                  <NotificationCenter />
+                </div>
                 <NavDropdown
                   align="end"
                   id="profile-dropdown"
