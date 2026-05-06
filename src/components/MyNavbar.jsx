@@ -162,8 +162,12 @@ const MyNavbar = () => {
             </Navbar.Collapse>
           </>
         ) : (
-          <Nav className="ms-auto d-flex align-items-center auth-nav-actions">
-            <Nav.Link as={Link} to="/login" className="signin-nav-btn">
+         <Nav className="ms-auto d-flex align-items-center auth-nav-actions">
+          <Nav.Link 
+              as={Link} 
+              to="/login" 
+              className="signin-nav-btn d-none d-lg-flex align-items-center"
+            >
               <FaSignInAlt /> Sign In
             </Nav.Link>
             <Nav.Link as={Link} to="/signup" className="signup-nav-btn">
