@@ -11,7 +11,7 @@
 ## 🚀 Live Demo
 
 <!-- Add your deployed link here -->
-🔗 [Live App](https://your-live-link.com)
+🔗 [Live App](https://rise-task-brown.vercel.app/)
 
 ---
 
@@ -50,14 +50,6 @@ risetask/
 │       ├── pages/          # App pages
 │       ├── context/        # State management
 │       └── App.js
-│
-├── server/                 # Node.js + Express Backend
-│   ├── config/             # DB connection
-│   ├── controllers/        # Route logic
-│   ├── models/             # Mongoose models
-│   ├── routes/             # API routes
-│   └── server.js
-│
 └── README.md
 ```
 
@@ -70,45 +62,22 @@ risetask/
 Make sure you have the following installed on your system:
 
 - [Node.js](https://nodejs.org/) (v16+)
-- [MongoDB](https://www.mongodb.com/) (local or MongoDB Atlas)
-- [Git](https://git-scm.com/)
 
 ---
 
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/risetask.git
+git clone (https://github.com/A-Raza-web/RiseTask.git)
 cd risetask
-```
-
-### 2️⃣ Backend Setup
-
-```bash
-cd server
-npm install
-```
-
-Create a `.env` file inside the `server/` folder:
-
-```env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-```
-
-Start the backend server:
-
-```bash
-npm run dev
 ```
 
 ### 3️⃣ Frontend Setup
 
 ```bash
 cd client
-npm install
-npm start
+npm install vite
+npm run dev
 ```
 
 ---
@@ -118,7 +87,7 @@ npm start
 | Service   | URL                      |
 |-----------|--------------------------|
 | Frontend  | http://localhost:3000    |
-| Backend   | http://localhost:5000    |
+
 
 ---
 
@@ -137,34 +106,18 @@ RiseTask is built with a mobile-first approach:
 <!-- Add your screenshots here -->
 | Mobile View | Desktop View |
 |-------------|--------------|
-| ![mobile](./screenshots/mobile.png) | ![desktop](./screenshots/desktop.png) |
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! If you'd like to improve the project or fix a bug:
-
-1. Fork the repo
-2. Create your feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+| ![mobile](<img width="377" height="675" alt="image" src="https://github.com/user-attachments/assets/d97ff99d-8285-42a7-91e6-06537dce0a1e" />
+) | ![desktop](<img width="1302" height="852" alt="image" src="https://github.com/user-attachments/assets/76e403b9-369c-4c0e-a7c2-7d2713175a47" />
+) |
 
 ---
 
 ## 👨‍💻 Developer
 
-**Your Name**
+**Ahmad Raza**
 
-- GitHub: [@your-username](https://github.com/your-username)
-- Email: your.email@example.com
+- GitHub: [@A-Raza-web](https://github.com/A-Raza-web)
+- Email: ar7386039@gmail.com
 
 ---
 
