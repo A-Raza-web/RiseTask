@@ -9,6 +9,7 @@ import ProgressBar from "../../components/TaskList/ProgressBar";
 import TaskEditForm from "../../components/TaskList/TaskEditForm";
 import MyTasklist from "../../components/TaskList/MyTasklist";
 import ShowCountMenu from "../../components/TaskList/ShowMenu";
+import Loader from "../../components/Loader";
 import "./TaskList.css";
 
 const TaskList = () => {
@@ -121,7 +122,7 @@ const TaskList = () => {
         <div className="spinner-border text-primary" role="status">
           <span className="visually-hidden">Loading...</span>
         </div>
-        <p className="mt-2 text-muted">Loading tasks...</p>
+        <p className="mt-2 text-muted"><Loader /></p>
       </div>
     );
   }

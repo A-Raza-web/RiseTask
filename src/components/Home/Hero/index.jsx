@@ -3,6 +3,7 @@ import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaBullseye, FaBolt, FaUsers } from "react-icons/fa";
 import DotGrid from "../DotGrid";
+import Loader from '../../Loader';
 import "./Hero.css";
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
       .catch((err) => console.error(err));
   }, []);
 
-  if (!homeData) return <p className="text-center mt-5">Loading...</p>;
+  if (!homeData) return <Loader />;
 
   return (
     // ✅ Hero Section
