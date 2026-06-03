@@ -34,7 +34,7 @@ const TaskForm = ({ onTaskAdded }) => {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/categories");
+      const response = await axios.get("https://rise-task-server.vercel.app/api/categories");
       if (response.data?.success && response.data.data?.length > 0) {
         setCategories(response.data.data);
       } else {
