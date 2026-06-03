@@ -4,22 +4,20 @@ import AOS from "aos";
 import { SnackbarProvider } from "./contexts/SnackbarContext";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import TaskForm from "./components/TaskForm/TaskForm";
-import TaskList from "./components/TaskList/TaskList";
-import Home from "./components/Home";
-import SchedulerPage from "./pages/SchedulerPage";
-import AITaskForm from "./pages/AITaskForm";
-import TeamTasksPage from "./pages/TeamTasksPage";
-import AllReviewsPage from "./pages/AllReviewsPage";
-import SubmitReviewPage from "./pages/SubmitReviewPage";
-import ProfilePage from "./pages/ProfilePage";
-import Dashboard from "./components/Dashboard/Dashboard";
-import Settings from "./components/Settings";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import MyNavbar from "./components/MyNavbar";
-import Auth from "./components/Auth";
-import Footer from "./components/Homepages/Footer";
+
+import TaskForm from "./pages/TaskForm";
+import TaskList from "./pages/TaskList";
+import Home from "./pages/Home";
+import AllReviewsPage from "./pages/UserReviews/AllReviewsPage";
+import SubmitReviewPage from "./pages/UserReviews/SubmitReviewPage";
+import ProfilePage from "./pages/Profile";
+import Dashboard from "./pages/Dashboard";
+import Settings from "./pages/Settings";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import MyNavbar from "./components/Navbar";
+import Auth from "./pages/Auth";
+import Footer from "./components/Home/Footer";
 
 function AppContent() {
   const location = useLocation();
@@ -108,9 +106,6 @@ function AppContent() {
               <Route path="/" element={isAuthenticated ? <Navigate to="/dashboard" replace /> : <Home />} />
               <Route path="/add-task" element={<TaskForm />} />
               <Route path="/tasks" element={<TaskList />} />
-              <Route path="/scheduler" element={<SchedulerPage />} />
-              <Route path="/ai-scheduler" element={<AITaskForm />} />
-              <Route path="/team-tasks" element={<TeamTasksPage />} />
               <Route path="/review" element={<AllReviewsPage />} />
               <Route path="/review/all" element={<AllReviewsPage />} />
               <Route path="/review/submit" element={<SubmitReviewPage />} />

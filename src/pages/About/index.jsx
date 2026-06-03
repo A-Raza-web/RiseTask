@@ -15,7 +15,7 @@ import aboutImage from "../../assets/images/aboutpage.png";
 import logo from "../../assets/onlinelogomaker-011226-1832-3129.png";
 import riseLogo from "../../assets/images/rise-logo.png";
 import riseIcon from "../../assets/images/rise-icon.jpg";
-import ImageTrail from "./ImageTrail";
+import ImageTrail from "../../components/ImageTrail";
 import "./About.css";
 
 function createSymbolBadge(symbolEntity, label, fromColor, toColor) {

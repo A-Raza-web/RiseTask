@@ -15,8 +15,8 @@ import {
   FaList,
   FaRegStar
 } from "react-icons/fa";
-import logo from "../assets/onlinelogomaker-011226-1832-3129.png";
-import NotificationCenter from "./NotificationCenter";
+import logo from "../../assets/onlinelogomaker-011226-1832-3129.png";
+import NotificationCenter from "../../pages/Notification";
 import './MyNavbar.css';
 
 const MyNavbar = () => {

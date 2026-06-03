@@ -4,9 +4,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { FaChartPie, FaTasks, FaCheckCircle, FaClock, FaExclamationCircle, FaPlus } from "react-icons/fa";
-import StatsCard from "./StatsCard";
-import TaskCharts from "./TaskCharts";
-import CategoriesList from "./cotegoriesList/CategoriesList";
+import StatsCard from "../../components/Dashboard/StatsCard";
+import TaskCharts from "../../components/Dashboard/TaskCharts";
+import CategoriesList from "../../components/Dashboard/cotegoriesList/CategoriesList";
 import "./Dashboard.css";
 
 const Dashboard = () => {

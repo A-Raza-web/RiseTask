@@ -3,11 +3,11 @@ import axios from "axios";
 import "./TaskForm.css";
 import { FaPlusCircle } from "react-icons/fa";
 
-import TaskTitleDescription from "./TaskTitleDescription.jsx";
-import TaskPriorityDueDate from "./TaskPriorityDueDate.jsx";
-import TaskCategoryTags from "./TaskCategoryTags.jsx";
-import TaskNotifications from "./TaskNotifications.jsx";
-import TaskFormActions from "./TaskFormActions.jsx";
+import TaskTitleDescription from "../../components/TaskForm/TaskTitleDescription.jsx";
+import TaskPriorityDueDate from "../../components/TaskForm/TaskPriorityDueDate.jsx";
+import TaskCategoryTags from "../../components/TaskForm/TaskCategoryTags.jsx";
+import TaskNotifications from "../../components/TaskForm/TaskNotifications.jsx";
+import TaskFormActions from "../../components/TaskForm/TaskFormActions.jsx";
 
 const API_URL = "https://rise-task-server.vercel.app/api/tasks";
 const orange = "#fd7e14";

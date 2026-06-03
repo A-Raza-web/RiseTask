@@ -13,7 +13,7 @@ import {
   FaUser,
   FaUserCircle,
 } from "react-icons/fa";
-import { useSnackbar } from "../contexts/SnackbarContext";
+import { useSnackbar } from "../../contexts/SnackbarContext";
 import "./ProfilePage.css";
 
 const profileSections = [

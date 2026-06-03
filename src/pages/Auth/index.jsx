@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
-import logo from "../assets/onlinelogomaker-011226-1832-3129.png";
+import logo from "../../assets/onlinelogomaker-011226-1832-3129.png";
 import "./Auth.css";
 
 const Auth = () => {

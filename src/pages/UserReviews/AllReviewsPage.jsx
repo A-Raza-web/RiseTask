@@ -11,7 +11,7 @@ import {
   FaUserCircle,
 } from "react-icons/fa";
 import axios from "axios";
-import { useSnackbar } from "../contexts/SnackbarContext";
+import { useSnackbar } from "../../contexts/SnackbarContext";
 import "./ReviewPage.css";
 
 const sidebarSections = [

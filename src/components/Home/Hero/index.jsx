@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaBullseye, FaBolt, FaUsers } from "react-icons/fa";
-import DotGrid from "./DotGrid";
+import DotGrid from "../DotGrid";
 import "./Hero.css";
 
 const Home = () => {

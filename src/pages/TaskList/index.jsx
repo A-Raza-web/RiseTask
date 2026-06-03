@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { FaTrophy, FaThLarge, FaTh, FaTimes, FaArrowLeft } from "react-icons/fa";
 import { TfiLayoutGrid4Alt } from "react-icons/tfi";
-import TaskFilter from "./TaskFilter";
-import TaskStats from "./TaskStats";
-import TaskItem from "./TaskItem";
-import ProgressBar from "./ProgressBar";
-import TaskEditForm from "./TaskEditForm";
-import MyTasklist from "./MyTasklist";
-import ShowCountMenu from "./ShowMenu";
+import TaskFilter from "../../components/TaskList/TaskFilter";
+import TaskStats from "../../components/TaskList/TaskStats";
+import TaskItem from "../../components/TaskList/TaskItem";
+import ProgressBar from "../../components/TaskList/ProgressBar";
+import TaskEditForm from "../../components/TaskList/TaskEditForm";
+import MyTasklist from "../../components/TaskList/MyTasklist";
+import ShowCountMenu from "../../components/TaskList/ShowMenu";
 import "./TaskList.css";
 
 const TaskList = () => {
