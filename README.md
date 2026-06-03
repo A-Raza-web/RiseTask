@@ -1,12 +1,100 @@
-# React + Vite
+# 📝 RiseTask — Task Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **RiseTask** is a fully responsive Task Manager application built with the MERN Stack. Create, manage, and track your daily tasks with ease — on mobile or laptop.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+<!-- Add your deployed link here -->
+🔗 [Live App](https://rise-task-brown.vercel.app/).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- ✅ Create, update, and delete tasks
+- 📱 Fully Responsive — works perfectly on both mobile and laptop
+- 🔐 User Authentication (Login / Register)
+- 📋 Task categories and priority levels
+- 🌙 Clean and modern UI
+- ⚡ Fast performance with React frontend
+- 🗄️ Persistent data storage with MongoDB
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer      | Technology         |
+|------------|-------------------|
+| Frontend   | React.js           |
+| Backend    | Node.js + Express  |
+| Database   | MongoDB + Mongoose |
+| Styling    | CSS / bootstrap |
+| Auth       | JWT Tokens         |
+
+---
+
+## 📁 Project Structure
+
+```
+risetask/
+├── client/                 # React Frontend
+│   ├── public/
+│   └── src/
+│       ├── components/     # Reusable components
+│       ├── pages/          # App pages
+│       ├── context/        # State management
+│       └── App.js
+└── README.md
+```
+
+---
+
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone (https://github.com/A-Raza-web/RiseTask.git)
+cd risetask
+```
+
+
+### 3️⃣ Frontend Setup
+
+```bash
+cd client
+npm install
+npm start
+```
+
+---
+
+## 🌐 Running the App
+
+| Service   | URL                      |
+|-----------|--------------------------|
+| Frontend  | http://localhost:3000    |
+
+---
+
+## 📱 Responsive Design
+
+RiseTask is built with a mobile-first approach:
+
+- 📱 **Mobile** — Smooth touch-friendly UI
+- 💻 **Laptop/Desktop** — Full-width layout with sidebar
+- 🖥️ **Tablet** — Adaptive grid layout
+
+---
+
+## 👨‍💻 Developer
+
+**Ahmad Raza**
+
+- GitHub: [@A-Aaza-web](https://github.com/A-Raza-web)
+- Email: ar7386039@gmail.com
+
+---
+
+> ⭐ If you found this project helpful, please give it a star!
