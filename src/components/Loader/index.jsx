@@ -2,7 +2,7 @@ import "./Loader.css";
 
 const Loader = () => {
   return (
-    <div className="loader">
+    <div className="loader ">
       <div className="loader_overlay"></div>
 
       <div className="loader_cogs">
@@ -28,7 +28,7 @@ const Loader = () => {
         </div>
       </div>
 
-      <p className="loading-text">Loading...</p>
+      <p className="loading-text ">Loading...</p>
     </div>
   );
 };
