@@ -107,7 +107,7 @@ RiseTask is built with a mobile-first approach:
 | Mobile View | Desktop View |
 |-------------|--------------|
 | ![mobile](<img width="377" height="675" alt="image" src="https://github.com/user-attachments/assets/d97ff99d-8285-42a7-91e6-06537dce0a1e" />
-) | ![desktop](<img width="1302" height="852" alt="image" src="https://github.com/user-attachments/assets/76e403b9-369c-4c0e-a7c2-7d2713175a47" />
+) | (<img width="1302" height="852" alt="image" src="https://github.com/user-attachments/assets/76e403b9-369c-4c0e-a7c2-7d2713175a47" />
 ) |
 
 ---
