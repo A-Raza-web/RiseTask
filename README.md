@@ -7,7 +7,7 @@
 ## 🚀 Live Demo
 
 <!-- Add your deployed link here -->
-🔗 [Live App](https://rise-task-brown.vercel.app/).
+🔗 [Live App](https://rise-task-brown.vercel.app/login).
 
 ---
 
