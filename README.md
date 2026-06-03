@@ -10,7 +10,6 @@
 
 ## 🚀 Live Demo
 
-<!-- Add your deployed link here -->
 🔗 [Live App](https://rise-task-brown.vercel.app/)
 
 ---
@@ -68,11 +67,11 @@ Make sure you have the following installed on your system:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone (https://github.com/A-Raza-web/RiseTask.git)
+git clone https://github.com/A-Raza-web/RiseTask.git
 cd risetask
 ```
 
-### 3️⃣ Frontend Setup
+### 2️⃣ Frontend Setup
 
 ```bash
 cd client
@@ -84,10 +83,9 @@ npm run dev
 
 ## 🌐 Running the App
 
-| Service   | URL                      |
-|-----------|--------------------------|
-| Frontend  | http://localhost:3000    |
-
+| Service   | URL                     |
+|-----------|-------------------------|
+| Frontend  | http://localhost:3000   |
 
 ---
 
@@ -103,12 +101,9 @@ RiseTask is built with a mobile-first approach:
 
 ## 📸 Screenshots
 
-<!-- Add your screenshots here -->
 | Mobile View | Desktop View |
-|-------------|--------------|
-| ![mobile](<img width="377" height="675" alt="image" src="https://github.com/user-attachments/assets/d97ff99d-8285-42a7-91e6-06537dce0a1e" />
- |<img width="1302" height="852" alt="image" src="https://github.com/user-attachments/assets/76e403b9-369c-4c0e-a7c2-7d2713175a47" />)
-
+|:-----------:|:------------:|
+| <img src="https://github.com/user-attachments/assets/d97ff99d-8285-42a7-91e6-06537dce0a1e" width="300" /> | <img src="https://github.com/user-attachments/assets/76e403b9-369c-4c0e-a7c2-7d2713175a47" width="600" /> |
 
 ---
 
