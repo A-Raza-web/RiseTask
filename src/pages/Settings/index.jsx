@@ -7,6 +7,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import "./Settings.css";
 import { useSnackbar } from "../../contexts/SnackbarContext";
 import { useConfirmDialog } from "../../hooks/useConfirmDialog"; 
+import Loader from "../../components/Loader";
 
 const API_URL = "https://rise-task-server.vercel.app/api/settings"; // Backend ka route
 const DEFAULT_SETTINGS = {
@@ -148,7 +149,7 @@ const Settings = ({ setDarkMode, token }) => {
     borderColor: enabled ? orange : "#ccc",
   });
 
-  if (loading) return <p>Loading settings...</p>;
+  if (loading) return <Loader />;
 
   return (
     <div className="container mt-4 settings-page">
